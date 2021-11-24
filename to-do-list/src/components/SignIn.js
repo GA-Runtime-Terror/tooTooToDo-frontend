@@ -11,12 +11,12 @@ const SignIn = () => {
             <h5>username</h5>
             <input onChange={(e) => setUsername(e.target.value)} />
             <h5>password</h5>
-            <input onChange={(e) => setPassword(e.target.value)} />
+            <input onChange={(e) => setPassword(e.target.value)} type="password"/>
             <button onClick={() => {
                 if(!userName.length || !password.length) {
                     alert('Please enter username or password')
                 } else {
-                    api.get(`/users/login/${userName}`).then(({ data }) => {
+                    api.get(`/users/login/authenticate`, {params:{userName: userName, password: password,}}).then(({ data }) => {
                         console.log(data)
                         // localStorage.setItem("user", JSON.stringify({ userName, password }))
                         // navigation('/')
