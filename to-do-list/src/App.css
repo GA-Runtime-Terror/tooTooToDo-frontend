@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+header {
+  display-flex: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+}
+.header-div{
+  position: relative;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+li{
+  list-style-type: none;
+  border: solid black 1px;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  font-size: 25px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sign-up{
+  height: 45px;
+  margin-left: 35%;
+ padding-bottom: 20px;
+}
+
+.footer-div {
+position: fixed;
+width: 100%;
+bottom: 0;
+border-top: solid black 2px;
+background-color: black ;
+color: white;
+display:flex;
+flex-wrap: wrap;
+justify-content: left;
+margin-top: 10px;
+}
+
+h1 {
+  font-size: 35px;
+  border-bottom: dashed black 1px;
+  display: flex;
+  justify-content: right;
+  
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+
+}
+
+h4 {
+  display: flex;
+  /* justify-content: center; */
+  padding: 10px;
+ 
+}
+.toucan-logo {
+  height: 100%;
+  width: auto;
+  position: absolute;
+    left: 10;
+    bottom: 0;
+}
+
+.sign-up-div {
+border-radius: 50%;
+
+}
+
+.body-div {
+  margin-bottom: 10px;
 }

@@ -11,7 +11,7 @@ const SignIn = () => {
             <h5>username</h5>
             <input onChange={(e) => setUsername(e.target.value)} />
             <h5>password</h5>
-            <input onChange={(e) => setPassword(e.target.value)} />
+            <input onChange={(e) => setPassword(e.target.value)} type="password"/>
             <button onClick={() => {
                 if(!userName.length || !password.length) {
                     alert('Please enter username or password')
@@ -25,8 +25,8 @@ const SignIn = () => {
             }}>
                 login
             </button>
-            <Link to='/sign-up'>
-            Don't have an account? Register</Link>
+            {/* <Link to='/sign-up'>
+            Don't have an account? Register</Link> */}
         </div>)
 }
 
