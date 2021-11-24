@@ -16,7 +16,7 @@ const SignIn = () => {
                 if(!userName.length || !password.length) {
                     alert('Please enter username or password')
                 } else {
-                    api.get(`/users/login/${userName}`).then(({ data }) => {
+                    api.get(`/users/login/authenticate`, {params:{userName: userName, password: password,}}).then(({ data }) => {
                         console.log(data)
                         // localStorage.setItem("user", JSON.stringify({ userName, password }))
                         // navigation('/')
