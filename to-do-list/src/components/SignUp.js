@@ -8,10 +8,10 @@ const SignUp = () => {
     const navigation = useNavigate()
     return (
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <h5>username</h5>
-            <input onChange={(e) => setUsername(e.target.value)} />
-            <h5>password</h5>
-            <input onChange={(e) => setPassword(e.target.value)  } />
+            <h5>Create username</h5>
+            <input className="sign-up-input" onChange={(e) => setUsername(e.target.value)} />
+            <h5>Create password</h5>
+            <input className="sign-up-input" onChange={(e) => setPassword(e.target.value)  } />
             <button onClick={() => {
                 if(!userName.length || !password.length) {
                     alert('Please enter username or password')

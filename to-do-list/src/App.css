@@ -1,4 +1,15 @@
 
+.App {
+  min-height: 100%;
+}
+
+body {
+  min-height: 400px;
+  margin-bottom: 100px;
+  clear: both;
+  
+}
+
 header {
   display-flex: flex;
   justify-content: center;
@@ -15,6 +26,8 @@ li{
   margin-right: 5%;
   margin-bottom: 2%;
   font-size: 25px;
+  width: 80vw;
+  background-color: white;
 
 }
 
@@ -32,9 +45,8 @@ border-top: solid black 2px;
 background-color: black ;
 color: white;
 display:flex;
-flex-wrap: wrap;
-justify-content: left;
 margin-top: 10px;
+justify-content: center;
 }
 
 h1 {
@@ -42,6 +54,8 @@ h1 {
   border-bottom: dashed black 1px;
   display: flex;
   justify-content: right;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-shadow: 2px 2px rgb(246, 198, 4);
   
 }
 
@@ -51,28 +65,71 @@ h2 {
 }
 
 h3 {
+  display: flex;
+  align-content: center;
 
 }
 
 h4 {
-  display: flex;
-  /* justify-content: center; */
-  padding: 10px;
+  padding-left: 10px;
+
  
 }
 .toucan-logo {
-  height: 100%;
+  height: 60px;
   width: auto;
   position: absolute;
     left: 10;
     bottom: 0;
 }
 
-.sign-up-div {
+/* .sign-up-div {
 border-radius: 50%;
 
+} */
+
+.list-input {
+  margin-left: 40px;
+  border: solid black 1px;
+  font-size: 25px;
+  width: 80vw;
+  /* width: 90%; */
 }
 
+.item-form {
+  
+    width: 90%;
+    position: relative;
+}
+
+
+
+input {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  outline: none;
+  height: 30px;
+  color: black;
+}
+
+.submit-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  border: none;
+  border-radius: 5px;
+  top: 2px;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  transform: translateX(2px);
+}
 .body-div {
-  margin-bottom: 10px;
+  background-image: url("https://i.ibb.co/X2fwDZ8/vines.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
