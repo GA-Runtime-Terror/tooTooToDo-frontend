@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { api } from '../api';
 
 const SignIn = () => {
     const [userName, setUsername] = useState('')
     const [password, setPassword] = useState('')
-    const navigation = useNavigate()
+    // const navigation = useNavigate()
     return (
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div >
             <h5>Enter username</h5>
             <input onChange={(e) => setUsername(e.target.value)} />
             <h5>Enter password</h5>
             <input onChange={(e) => setPassword(e.target.value)} type="password"/>
-            <button onClick={() => {
+            <button className="register-button" onClick={() => {
                 if(!userName.length || !password.length) {
                     alert('Please enter username or password')
                 } else {
@@ -25,8 +25,7 @@ const SignIn = () => {
             }}>
                 login
             </button>
-            {/* <Link to='/sign-up'>
-            Don't have an account? Register</Link> */}
+            <Link  exact to="/">  <i className="fas fa-home fa-3x"></i>  </Link>
         </div>)
 }
 

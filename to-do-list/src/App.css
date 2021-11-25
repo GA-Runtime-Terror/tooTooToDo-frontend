@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  display-flex: flex;
+  display: flex;
   justify-content: center;
 
 }
@@ -83,10 +83,6 @@ h4 {
     bottom: 0;
 }
 
-/* .sign-up-div {
-border-radius: 50%;
-
-} */
 
 .list-input {
   margin-left: 40px;
@@ -104,13 +100,14 @@ border-radius: 50%;
 
 
 
-input {
+.input-landing {
   margin: 0px;
   padding: 0px;
-  width: 100%;
+  width: 80vw;
   outline: none;
   height: 30px;
   color: black;
+  margin-right: 10%;
 }
 
 .submit-button {
@@ -119,7 +116,6 @@ input {
   right: 0;
   z-index: 2;
   border: none;
-  border-radius: 5px;
   top: 2px;
   height: 30px;
   cursor: pointer;
@@ -127,9 +123,34 @@ input {
   background-color: black;
   transform: translateX(2px);
 }
+
+
+ .register-button {
+  background-color: black;
+  color: white;
+  margin-left: 50px;
+  margin-top: 2%;
+} 
+
+
+.fa-home {
+  position: absolute;
+  background: black;
+  color: white;
+  border-radius: 20%;
+  bottom: 0;
+  
+  
+  
+}
+
 .body-div {
   background-image: url("https://i.ibb.co/X2fwDZ8/vines.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+}
+input {
+  width: 90%;
+  margin-right: 10px;
 }
