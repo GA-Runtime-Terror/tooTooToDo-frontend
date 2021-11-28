@@ -6,7 +6,7 @@ function Footer() {
         
         <div className="footer-div">
 
-          <div className="sign-up-div">   </div>
+        
        <h3> Sign up <Link  exact to="/sign-up"> here </Link>  </h3>
         
        

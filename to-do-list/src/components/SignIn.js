@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { api } from '../api';
+import FooterTwo from './FooterTwo';
 
 const SignIn = () => {
     const [userName, setUsername] = useState('')
@@ -8,6 +9,12 @@ const SignIn = () => {
     // const navigation = useNavigate()
     return (
         <div >
+
+<div className="signup-header">
+
+<p> word space lojalihcnkjkankjcnas</p>
+
+</div>
             <h5>Enter username</h5>
             <input onChange={(e) => setUsername(e.target.value)} />
             <h5>Enter password</h5>
@@ -25,7 +32,10 @@ const SignIn = () => {
             }}>
                 login
             </button>
-            <Link  exact to="/">  <i className="fas fa-home fa-3x"></i>  </Link>
+
+            
+        <FooterTwo />
+            
         </div>)
 }
 
