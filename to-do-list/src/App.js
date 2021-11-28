@@ -4,7 +4,6 @@ import TodoList from './components/TodoList';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import Landing from './components/Landing';
-import {Link} from 'react-router-dom';
 
 
 
@@ -14,14 +13,18 @@ function App() {
 
     <div>
       <Routes>  
-        <Route exact path={'/'} render={() => <Landing />} />
+        {/* <Route exact path={'/'} render={() => <Landing />} /> */}
+
+        <Route exact path={'/'} element={<Landing />} />
         <Route exact path={'/to-do'} element={<TodoList />} />
         <Route exact path={'/sign-in'} element={<SignIn />} />
         <Route exact path={'/sign-up'} element={<SignUp />} />
+
+        
         
       </Routes>
 
-<Landing/>
+
 
   </div>
   );

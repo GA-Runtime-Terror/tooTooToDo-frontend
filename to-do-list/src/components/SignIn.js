@@ -1,18 +1,26 @@
-import React, { useState } from 'react'
-import { useNavigate, Link } from 'react-router-dom'
-import { api } from '../api'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { api } from '../api';
+import FooterTwo from './FooterTwo';
 
 const SignIn = () => {
     const [userName, setUsername] = useState('')
     const [password, setPassword] = useState('')
-    const navigation = useNavigate()
+    // const navigation = useNavigate()
     return (
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <h5>username</h5>
+        <div >
+
+<div className="signup-header">
+
+
+
+</div >
+<div className="signup-input">
+            <h5>Enter username</h5>
             <input onChange={(e) => setUsername(e.target.value)} />
-            <h5>password</h5>
+            <h5>Enter password</h5>
             <input onChange={(e) => setPassword(e.target.value)} type="password"/>
-            <button onClick={() => {
+            <button className="register-button" onClick={() => {
                 if(!userName.length || !password.length) {
                     alert('Please enter username or password')
                 } else {
@@ -25,8 +33,10 @@ const SignIn = () => {
             }}>
                 login
             </button>
-            {/* <Link to='/sign-up'>
-            Don't have an account? Register</Link> */}
+</div>
+            
+        <FooterTwo />
+            
         </div>)
 }
 
