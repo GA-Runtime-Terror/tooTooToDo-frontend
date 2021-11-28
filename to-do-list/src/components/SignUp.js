@@ -13,10 +13,11 @@ const SignUp = () => {
 
         <div className="signup-header">
 
-        <p> word space lojalihcnkjkankjcnas</p>
         
         </div>
-      <div>
+
+
+      <div className="signup-input">
         <h5>Create username</h5>
         <input onChange={(e) => setUsername(e.target.value)} />
         <h5>Create password</h5>
@@ -41,10 +42,11 @@ const SignUp = () => {
           register
         </button> 
 
-        <p>waaaaayyy moe words</p>
+    
         <div className="register-footer-div">
+             </div>
        <FooterTwo />
-      </div>
+     
       </div>
 
       

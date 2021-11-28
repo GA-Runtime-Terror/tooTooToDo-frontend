@@ -185,7 +185,7 @@ input {
 position: fixed;
 width: 100%;
 bottom: 0;
-background-color: tomato;
+background-color: #ffd900;
 border-top: black dashed 2px;
 
 
@@ -209,7 +209,6 @@ border-top: black dashed 2px;
 
 .signup-header {
   height: 30vh;
-  background-color: black;
 
 }
 
@@ -285,3 +284,10 @@ input:checked + .slider:before {
   font-size: 20px;
 }
 
+.footer-two-words {
+  color: #ffd900;
+}
+
+.signup-input {
+  margin-left: 20px;
+}

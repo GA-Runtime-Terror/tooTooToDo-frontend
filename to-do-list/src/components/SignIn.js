@@ -12,9 +12,10 @@ const SignIn = () => {
 
 <div className="signup-header">
 
-<p> word space lojalihcnkjkankjcnas</p>
 
-</div>
+
+</div >
+<div className="signup-input">
             <h5>Enter username</h5>
             <input onChange={(e) => setUsername(e.target.value)} />
             <h5>Enter password</h5>
@@ -32,7 +33,7 @@ const SignIn = () => {
             }}>
                 login
             </button>
-
+</div>
             
         <FooterTwo />
             
