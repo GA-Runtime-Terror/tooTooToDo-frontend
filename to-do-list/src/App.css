@@ -49,6 +49,13 @@ h2 {
   justify-content: center;
 }
 
+h3 {
+  margin-right: 30px;
+  left: 0;
+}
+
+
+
 
 
 .toucan-logo {
@@ -101,9 +108,13 @@ h2 {
 }
 
 
- .register-button {
+ #register-button {
   background-color: black;
   color: white;
+  margin-top: 10px;
+  
+  justify-content: center;
+  
 } 
 
 .listItem-form {
@@ -128,10 +139,11 @@ margin-right: 10%;
   
     position: absolute;
     top: 0;
-    right: 0;
+    right: 5px;
     z-index: 2;
     border: none;
-    top: 2px;
+    /* top: 2px; */
+    /* width: auto; */
     height: 30px;
     cursor: pointer;
     color: white;
@@ -168,7 +180,7 @@ margin-right: 10%;
 
 
 .body-div {
-  background-image: url("https://i.ibb.co/X2fwDZ8/vines.jpg");
+  /* background-image: url("https://i.ibb.co/X2fwDZ8/vines.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   height: 90vh;
@@ -203,9 +215,6 @@ border-top: black dashed 2px;
     
 }
 
-.sign-up {
-
-}
 
 .signup-header {
   height: 30vh;
@@ -279,7 +288,7 @@ input:checked + .slider:before {
 
 
 #quote-div {
-  border: solid orange 2px;
+  
   background-color: white;
   font-size: 20px;
 }
@@ -290,4 +299,8 @@ input:checked + .slider:before {
 
 .signup-input {
   margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  
 }

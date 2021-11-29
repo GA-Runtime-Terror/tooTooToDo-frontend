@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { api } from '../api';
-import FooterTwo from './FooterTwo';
+import FooterThree from './FooterThree';
 
 const SignIn = () => {
     const [userName, setUsername] = useState('')
@@ -11,16 +11,26 @@ const SignIn = () => {
         <div >
 
 <div className="signup-header">
-
-
-
+<div className="header-div">
+          <img
+            className="toucan-logo"
+            src="https://i.ibb.co/Jt8zy7x/toucan-1.png"
+            alt="toucan-1"
+          />
+          
+          <h1> Toucan </h1>
+        </div>
 </div >
+
+<h2> Log In Here!</h2>
+
 <div className="signup-input">
             <h5>Enter username</h5>
             <input onChange={(e) => setUsername(e.target.value)} />
             <h5>Enter password</h5>
             <input onChange={(e) => setPassword(e.target.value)} type="password"/>
-            <button className="register-button" onClick={() => {
+
+            <button id="register-button" onClick={() => {
                 if(!userName.length || !password.length) {
                     alert('Please enter username or password')
                 } else {
@@ -35,9 +45,11 @@ const SignIn = () => {
             </button>
 </div>
             
-        <FooterTwo />
+        <FooterThree />
             
-        </div>)
+        </div>
+        )
 }
+    
 
 export default SignIn

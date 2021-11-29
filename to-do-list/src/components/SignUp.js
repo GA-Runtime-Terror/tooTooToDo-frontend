@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { api } from "../api";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import FooterTwo from "./FooterTwo";
 
 const SignUp = () => {
@@ -9,13 +9,22 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const navigation = useNavigate();
   return (
-    <div className="sign-up">
+    <div >
 
         <div className="signup-header">
-
+        <div className="header-div">
+          <img
+            className="toucan-logo"
+            src="https://i.ibb.co/Jt8zy7x/toucan-1.png"
+            alt="toucan-1"
+          />
+          
+          <h1> Toucan </h1>
+        </div>
         
         </div>
 
+        <h2> New User Sign-up</h2>
 
       <div className="signup-input">
         <h5>Create username</h5>
@@ -23,7 +32,7 @@ const SignUp = () => {
         <h5>Create password</h5>
         <input onChange={(e) => setPassword(e.target.value)} />
 
-        <button
+        <button id="register-button"
           onClick={() => {
             if (!userName.length || !password.length) {
               alert("Please enter username or password");
@@ -45,10 +54,10 @@ const SignUp = () => {
     
         <div className="register-footer-div">
              </div>
-       <FooterTwo />
+       
      
       </div>
-
+<FooterTwo />
       
     </div>
   );

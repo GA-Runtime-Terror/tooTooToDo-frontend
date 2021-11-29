@@ -7,7 +7,7 @@ function Footer() {
         <div className="footer-div">
 
         
-       <h3> Sign up <Link  exact to="/sign-up"> here </Link>  </h3>
+       <h3>  <Link  exact to="/sign-up">Sign up </Link>  </h3>
         
        
          {/* <img className="sign-up" src="https://i.ibb.co/tPt7mqY/108230281-document-contract-logo-or-label-literature-letter-quill-pen-and-paper-icon-vector-illustra.png" alt="sign up" /> */}
@@ -15,7 +15,7 @@ function Footer() {
 
          <br/>
 
-        <h4>Already a member? Log in <Link  exact to="/sign-in"> here </Link> </h4>
+        <h4> <Link  exact to="/sign-in"> Log in </Link> </h4>
 
        </div>
     );
