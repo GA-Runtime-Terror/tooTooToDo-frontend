@@ -12,56 +12,57 @@ function List(props) {
     
       const handleClick = (event) => {
         event.preventDefault();
-        addItem.push(listItem);
+        // addItem.push(listItem);
+        setAddItem([...addItem, listItem])
     
         console.log(addItem);
       };
 
-    //    const removeClick = (event) => {
-    //     event.preventDefault();
-    //     addItem.splice();
-    //    }
+      const removeClick = (index) => (event) => {
+        event.preventDefault();
+        const copy = [...addItem];
+        copy.splice(index,1)
+        setAddItem(copy)
+      }
 
     useEffect(() => {
         console.log("use effect");
-      }, );
+      }, []);
 
-    const addList = addItem.map((item) => {
-        return <div className="listItem-form"><li key={item} className="listItem-landing">{item}  <button  className="remove-button">Done</button> </li></div>;
+      const addList = addItem.map((item, index) => {
+        return (
+          <li className='listItem-form'>
+            <div className='listItem-landing'>{item}</div>
+            <button className='button' onClick={removeClick(index)}>
+              remove
+            </button>
+          </li>
+        );
       });
    
-// onClick={removeClick}
+
     return (
-       <div>
+      <ul>
+      <li className='listItem-form'>
+        <div className='listItem-landing'>Example Item</div>
+        <button className='button'>remove</button>
+      </li>
 
-          {/* <p> List component </p>  */}
-
-
-
-
-
-          <ul>
-        <div className="listItem-form"><li className="listItem-landing"> Example item <button className="remove-button-example">Remove</button> </li></div>
-          {/* <li>Example item <button className="remove-button" >remove</button></li> */}
-          
-          <li>
-            {addList} 
-          </li>
-        </ul>
-
-        <form className="item-form">
+      {addList}
+      <li className='listItem-form'>
+        <div className='listItem-landing'>
           <input
-            className="input-landing"
+            className='input-landing list-input'
             onChange={handleChange}
-            className="list-input"
-            type="text"
-            placeholder="Add new item"
+            type='text'
+            placeholder='Add new item'
           />
-          <button className="submit-button" onClick={handleClick} type="submit">
-            Submit
-          </button>
-        </form>
-       </div>
+        </div>
+        <button className='button' onClick={handleClick} type='submit'>
+          Submit
+        </button>
+      </li>
+    </ul>
     )
 }
 

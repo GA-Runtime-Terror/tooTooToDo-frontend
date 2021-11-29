@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { api } from "../api";
 import { useNavigate } from "react-router-dom";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import FooterTwo from "./FooterTwo";
 
 const SignUp = () => {
@@ -24,12 +24,12 @@ const SignUp = () => {
         
         </div>
 
-        <h2> New User Sign-up</h2>
+        <h2> User Registration </h2>
 
       <div className="signup-input">
-        <h5>Create username</h5>
+        <h4>Create username</h4>
         <input onChange={(e) => setUsername(e.target.value)} />
-        <h5>Create password</h5>
+        <h4>Create password</h4>
         <input onChange={(e) => setPassword(e.target.value)} />
 
         <button id="register-button"

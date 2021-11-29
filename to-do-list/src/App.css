@@ -1,306 +1,223 @@
-
 .App {
-  /* min-height: 100%; */
-}
-
-
-
-.header-div{
-  position: relative;
- 
-}
-
-li{
-  list-style-type: none;
-  border: solid black 1px;
-  margin-right: 5%;
-  margin-bottom: 2%;
-  font-size: 25px;
-  width: 80vw;
-  background-color: white;
 
 }
 
+.header-div {
+	position: relative;
+  border-bottom: dashed black 1px;
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+}
 
+li {
+	list-style-type: none;
+	border: solid black 1px;
+	margin-right: 5%;
+	margin-bottom: 2%;
+	font-size: 25px;
+	background-color: white;
+}
 
 .footer-div {
-position: fixed;
-width: 100%;
-bottom: 0;
-border-top: solid black 2px;
-background-color: black ;
-color: white;
-display:flex;
-justify-content: center;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	border-top: solid black 2px;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
 }
 
 h1 {
-  font-size: 35px;
-  border-bottom: dashed black 1px;
-  display: flex;
-  justify-content: right;
-  font-family: 'Montserrat Alternates', sans-serif;
-  text-shadow: 2px 2px rgb(246, 198, 4);
-  
+	font-size: 35px;
+
+	font-family: 'Montserrat Alternates', sans-serif;
+	text-shadow: 2px 2px rgb(246, 198, 4);
+  margin-right: 5%;
 }
 
 h2 {
-  display:flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
-
-h3 {
-  margin-right: 30px;
-  left: 0;
-}
-
-
-
-
 
 .toucan-logo {
-  height: 60px;
-  width: auto;
-  position: absolute;
-    left: 10;
-    bottom: 0;
+	height: 90px;
+	width: auto;
+	/* position: absolute; */
+	/* left: 10;
+	bottom: 0; */
 }
-
 
 .list-input {
-  margin-left: 40px;
-  border: solid black 1px;
-  font-size: 25px;
-  width: 80vw;
-  /* width: 90%; */
+	border: solid black 1px;
+	font-size: 25px;
 }
-
-.item-form {
-  
-    width: 90%;
-    position: relative;
-}
-
 
 
 .input-landing {
-  margin: 0px;
-  padding: 0px;
-  width: 80vw;
-  outline: none;
-  height: 30px;
-  color: black;
-  margin-right: 10%;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	outline: none;
+	height: 30px;
+	color: black;
+
 }
 
-.submit-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  border: none;
-  top: 2px;
-  height: 30px;
-  cursor: pointer;
-  color: white;
-  background-color: black;
-  transform: translateX(2px);
+.register-button {
+	background-color: black;
+	color: white;
 }
-
-
- #register-button {
-  background-color: black;
-  color: white;
-  margin-top: 10px;
-  
-  justify-content: center;
-  
-} 
 
 .listItem-form {
-  
-  width: 90%;
-  position: relative;
+	position: relative;
+  display: flex;
+  justify-content: space-between;
 }
-
-
 
 .listItem-landing {
-margin: 0px;
-padding: 0px;
-width: 80vw;
-outline: none;
-height: 30px;
-color: black;
-margin-right: 10%;
+	margin: 0px;
+	padding: 0px;
+	height: 30px;
+	color: black;
 }
 
-.remove-button {
-  
-    position: absolute;
-    top: 0;
-    right: 5px;
-    z-index: 2;
-    border: none;
-    /* top: 2px; */
-    /* width: auto; */
-    height: 30px;
-    cursor: pointer;
-    color: white;
-    background-color: black;
-    transform: translateX(2px);
-}
-
-.remove-button-example {
-  
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  border: none;
-  top: 2px;
-  height: 30px;
-  cursor: pointer;
-  color: white;
-  background-color: black;
-  transform: translateX(2px);
+.button {
+	height: 30px;
+  width: 80px;
+	cursor: pointer;
+	color: white;
+	background-color: black;
 }
 
 
 .fa-home {
-  position: absolute;
-  background: black;
-  color: white;
-  border-radius: 20%;
-  bottom: 0;
-
-  
-  
+	position: absolute;
+	background: black;
+	color: white;
+	border-radius: 20%;
+	bottom: 0;
 }
 
-
 .body-div {
-  /* background-image: url("https://i.ibb.co/X2fwDZ8/vines.jpg"); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 90vh;
+	/* background-image: url('https://i.ibb.co/X2fwDZ8/vines.jpg');
+	background-size: cover;
+	background-repeat: no-repeat; */
+	height: 90vh;
 }
 
 input {
-  width: 90%;
-  
+	width: 90%;
 }
 
 .footer-two {
-  display:flex;
-  justify-content: center;
-position: fixed;
-width: 100%;
-bottom: 0;
-background-color: #ffd900;
-border-top: black dashed 2px;
-
-
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background-color: #ffd900;
+	border-top: black dashed 2px;
 }
 
 .register-footer-div {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    border-top: solid black 2px;
-    background-color: black ;
-    color: white;
-    display:flex;
-    justify-content: center;
-    
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	border-top: solid black 2px;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
 }
 
+.sign-up {
+}
 
 .signup-header {
-  height: 30vh;
-
+	height: 30vh;
 }
-
 
 /* The switch - the box around the slider    "W3 schools Toggle Switch"*/
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+	position: relative;
+	display: none;
+	width: 60px;
+	height: 34px;
 }
 
 /* Hide default HTML checkbox */
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+	opacity: 0;
+	width: 0;
+	height: 0;
 }
 
 /* The slider */
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: green;
-  -webkit-transition: .4s;
-  transition: .4s;
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: green;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+	position: absolute;
+	content: '';
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: black;
+	background-color: black;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+	box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+	border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+	border-radius: 50%;
 }
 /* End of W# schools code!!  */
 
-
 #quote-div {
-  
-  background-color: white;
-  font-size: 20px;
+	/* border: solid orange 2px; */
+	background-color: white;
+	font-size: 20px;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .footer-two-words {
-  color: #ffd900;
+	color: #ffd900;
 }
 
 .signup-input {
-  margin-left: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  
-  
+	margin-left: 20px;
 }
