@@ -1,23 +1,75 @@
-import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+
 
 function Header() {
+
+  const [menu, setMenu] = useState(false)
+
+  useEffect(() => {
+    handleHamburger();
+    }, [])
+
+  const menuToggle = () => {
+    setMenu(!menu) 
+     
+  }
+
+  const handleHamburger = () => {
+
+    if (menu === true) {
+
+      return (
+
+        <div id="menu-div">
+
+        <div>
+          {" "}
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>{" "}
+        </div>
+
+      </div>)
+
+    } else {
+
+    return (
+      <>
+      </>
+    )
+      
+    }
+}
+  
+    
+
   return (
     <div>
-      <div> <label class="switch">
-          <input type="checkbox" />
-          <span class="slider round"></span>
-        </label>  </div>
-        <div className="header-div">
-          <img
-            className="toucan-logo"
-            src="https://i.ibb.co/Jt8zy7x/toucan-1.png"
-            alt="toucan-1"
-          />
-          <h1> Toucan </h1>
-        </div>
+
+{/* <div>
+          {" "}
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>{" "}
+        </div> */}
+      <div className="header-div">
+        <img
+          className="toucan-logo"
+          src="https://i.ibb.co/Jt8zy7x/toucan-1.png"
+          alt="toucan-1"
+        />
+       
+        {handleHamburger()}
+ 
+        <h1> Toucan </h1>
+         <i onClick={() => {menuToggle()}} class="fas fa-bars fa-2x"></i>
       </div>
-  
+
+      
+    </div>
   );
 }
 

@@ -44,7 +44,8 @@ h2 {
 }
 
 .toucan-logo {
-	height: 60px;
+
+	height: 90px;
 	width: auto;
 	/* position: absolute; */
 	/* left: 10;
@@ -78,11 +79,13 @@ h2 {
   justify-content: space-between;
 }
 
+
 .listItem-landing {
 	margin: 0px;
 	padding: 0px;
 	height: 30px;
 	color: black;
+
 }
 
 .button {
@@ -91,7 +94,10 @@ h2 {
 	cursor: pointer;
 	color: white;
 	background-color: black;
+
 }
+
+
 
 
 .fa-home {
