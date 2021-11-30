@@ -93,6 +93,5 @@ function LoggedIn(props) {
 			<Footer />
 		</div>
 	);
-}
 
 export default LoggedIn;

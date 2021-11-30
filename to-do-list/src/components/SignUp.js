@@ -7,7 +7,7 @@ const SignUp = (props) => {
 	const navigation = useNavigate();
 	const newUser = useRef(null);
 	const newPassword = useRef(null);
-
+  
 	const handleSubmit = (e) => {
 		e.preventDefault(e);
 		const userName = newUser.current.value;
@@ -36,16 +36,17 @@ const SignUp = (props) => {
 
 	return (
 		<div>
-			<div className='signup-header'>
-				<div className='header-div'>
-					<img
-						className='toucan-logo'
-						src='https://i.ibb.co/Jt8zy7x/toucan-1.png'
-						alt='toucan-1'
-					/>
-					<h1> Toucan </h1>
-				</div>
-			</div>
+			 <div className="signup-header">
+        <div className="header-div">
+          <Link  exact to="/">
+              <img
+              id="toucan-logo"
+              src="https://i.ibb.co/Jt8zy7x/toucan-1.png"
+              alt="toucan-1"/>
+          </Link>
+          <h1> Toucan </h1>
+        </div>
+      </div>
 			<h2> User Registration </h2>
 			<div className='signup-input'>
 				<h4>Create username</h4>
