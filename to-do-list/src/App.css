@@ -1,13 +1,11 @@
-.App {
-
-}
+.App {}
 
 .header-div {
 	position: relative;
-  border-bottom: dashed black 1px;
+	border-bottom: dashed black 1px;
 	display: flex;
 	justify-content: space-between;
-  align-items: center;
+	align-items: center;
 }
 
 li {
@@ -32,11 +30,11 @@ li {
 
 h1 {
 	font-size: 35px;
-	
+
 
 	font-family: 'Montserrat Alternates', sans-serif;
 	text-shadow: 2px 2px rgb(246, 198, 4);
-  margin-right: 5%;
+	margin-right: 5%;
 }
 
 h2 {
@@ -48,7 +46,7 @@ h2 {
 }
 
 h3 {
-	 border-top: solid 2px transparent;
+	border-top: solid 2px transparent;
 
 
 }
@@ -56,28 +54,28 @@ h3 {
 
 
 a {
-	text-decoration: none;	
+	text-decoration: none;
 	color: black;
 	border-radius: 50px;
 	font-size: 14px;
 	font-weight: 600;
 	padding: 5px 1em;
 	margin: 20px;
-	background-image: linear-gradient( #ff7979 , yellow);
+	background-image: linear-gradient(#ff7979, yellow);
 }
 
 a:hover {
-	border-top: 5px solid #7bb5db ;
-  }
+	border-top: 5px solid #7bb5db;
+}
 
-.header-div a{
+.header-div a {
 	padding: none;
 }
 
 #toucan-logo {
 	height: 80px;
 	width: auto;
-	background-image: linear-gradient(purple, #ff7979 , yellow);
+	background-image: linear-gradient(purple, #ff7979, yellow);
 	border-radius: 50px;
 	padding: none;
 }
@@ -85,7 +83,7 @@ a:hover {
 .list-input {
 	border: solid black 1px;
 	font-size: 25px;
-	
+
 }
 
 
@@ -102,14 +100,14 @@ a:hover {
 #register-button {
 	background-color: black;
 	color: white;
-	margin: 5px 0 ;
+	margin: 5px 0;
 	font-size: 15px;
 }
 
 .listItem-form {
 	position: relative;
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 
@@ -123,7 +121,7 @@ a:hover {
 
 .button {
 	height: 30px;
-  width: 80px;
+	width: 80px;
 	cursor: pointer;
 	color: white;
 	background-color: black;
@@ -170,8 +168,7 @@ input {
 	justify-content: center;
 }
 
-.sign-up {
-}
+.sign-up {}
 
 .signup-header {
 	height: 30vh;
@@ -217,15 +214,15 @@ input {
 	transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
 	background-color: black;
 }
 
-input:focus + .slider {
+input:focus+.slider {
 	box-shadow: 0 0 1px #2196f3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
 	-webkit-transform: translateX(26px);
 	-ms-transform: translateX(26px);
 	transform: translateX(26px);
@@ -239,16 +236,17 @@ input:checked + .slider:before {
 .slider.round:before {
 	border-radius: 50%;
 }
+
 /* End of W# schools code!!  */
 
 #quote-div {
 	/* border: solid orange 2px; */
 	background-color: white;
 	font-size: 20px;
-  width: 90%;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 10px;
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 10px;
 }
 
 .footer-two-words {
@@ -264,4 +262,10 @@ input:checked + .slider:before {
 	font-size: 35px;
 	font-weight: bolder;
 	text-shadow: 1px 2px purple;
+}
+
+#task {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }

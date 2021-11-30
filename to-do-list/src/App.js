@@ -16,7 +16,6 @@ function App() {
 	return (
 		<div>
 			<Routes>
-				{/* <Route exact path={'/'} render={() => <Landing />} /> */}
 				<Route exact path={'/'} element={<Landing />} />
 				<Route
 					exact
