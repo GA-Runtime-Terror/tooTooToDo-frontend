@@ -1,46 +1,22 @@
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import {ThemeProvider} from "styled-components";
+import { GlobalStyles } from "./globalStyles";
+import { lightTheme, darkTheme } from "./Toggle"
 
 
 function Header() {
 
-  const [menu, setMenu] = useState(false)
-
-  useEffect(() => {
-    handleHamburger();
-    }, [])
-
-  const menuToggle = () => {
-    setMenu(!menu) 
-     
+ 
+  const [navbarOpen, setNavbarOpen] = useState(false)
+  
+  const handleToggle = () => {
+    setNavbarOpen(!navbarOpen)
   }
 
-  const handleHamburger = () => {
-
-    if (menu === true) {
-
-      return (
-
-        <div id="menu-div">
-
-        <div>
-          {" "}
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider round"></span>
-          </label>{" "}
-        </div>
-
-      </div>)
-
-    } else {
-
-    return (
-      <>
-      </>
-    )
-      
-    }
+  const [theme, setTheme] = useState('light');
+  const themeToggler = () => {
+    theme === 'light' ? setTheme('dark') : setTheme('light')
 }
   
     
@@ -48,25 +24,37 @@ function Header() {
   return (
     <div>
 
-{/* <div>
-          {" "}
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider round"></span>
-          </label>{" "}
-        </div> */}
+
       <div className="header-div">
-      <Link  exact to="/">  <img
+      <Link   to="/">  <img
           id="toucan-logo"
           src="https://i.ibb.co/Jt8zy7x/toucan-1.png"
           alt="toucan-1"
         />  </Link>
         
-       
-        {handleHamburger()}
+        
  
         <h1> Toucan </h1>
-         <i onClick={() => {menuToggle()}} class="fas fa-bars fa-2x"></i>
+        
+        <div id="menu-div">
+        {/* <nav className="navBar"> */}
+        <button onClick={handleToggle}><i  id="hamburger" class="fas fa-bars fa-2x"></i></button>
+
+        <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
+        <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+      <>
+      <GlobalStyles/>
+          <button onClick={themeToggler}>Light/Dark</button>
+
+          </>
+    </ThemeProvider>
+
+        </ul>
+  {/* </nav> */}
+  </div>
+
+
+         
       </div>
 
       

@@ -13,7 +13,7 @@ const SignUp = () => {
 
         <div className="signup-header">
         <div className="header-div">
-        <Link  exact to="/">  <img
+        <Link  to="/">  <img
           id="toucan-logo"
           src="https://i.ibb.co/Jt8zy7x/toucan-1.png"
           alt="toucan-1"

@@ -9,6 +9,7 @@ import {useState} from 'react'
 
 
 
+
 function App() {
  
   const [loggedInUser, setLoggedInUser] = useState ({})
@@ -16,6 +17,9 @@ function App() {
  const handleLogin = (data) => {
    setLoggedInUser(data)
  }
+
+
+ 
 
   return (
 
@@ -27,13 +31,14 @@ function App() {
         <Route exact path={'/to-do'} element={<TodoList />} />
         <Route exact path={'/sign-in'} element={<SignIn handleLogin={handleLogin}/>} />
         <Route exact path={'/sign-up'} element={<SignUp handleLogin={handleLogin}  />} />
-        <Route exact path={'/logged-in'} element={<LoggedIn user={loggedInUser}/>} />
+        <Route exact path={'/logged-in'} element={<LoggedIn user={loggedInUser} />} />
 
         
         
       </Routes>
 
 
+      
 
   </div>
   );

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Footer from "./Footer";
-import Header from "./Header";
+import LandingHeader from "./LandingHeader";
 import List from "./List";
 
 function Landing() {
@@ -25,14 +25,14 @@ function Landing() {
   }, []);
 
   const quoteHTML = randomQuote.map((quote) => {
-    return <p>{quote.q}</p>;
+    return <p>"{quote.q}" - {quote.a}</p>;
   });
 
  
 
   return (
     <div className="App">
-      <Header />
+      <LandingHeader />
       
 
       <div className="body-div">
