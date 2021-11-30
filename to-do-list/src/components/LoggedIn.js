@@ -56,7 +56,7 @@ function LoggedIn(props) {
 	if (list)
 		task = list.map((item) => {
 			return (
-				<li className='listItem-form'>
+				<li className='listItem-form' key={item._id}>
 					<div className='listItem-landing'>{item.name}</div>
 					<button onClick={() => handleRemove(item._id)} className='button'>
 						remove
