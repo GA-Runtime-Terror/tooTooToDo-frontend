@@ -78,8 +78,8 @@ const LoggedIn = (props) => {
 				<ul>
 					{task}
 					<li className='listItem-form'>
-						<div className='listItem-landing' id='task'>
-							<form onSubmit={handleSubmit}>
+						<div className='listItem-landing'>
+							<form onSubmit={handleSubmit} className='task'>
 								<input
 									ref={textInput}
 									className='input-landing list-input'

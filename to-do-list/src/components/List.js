@@ -38,7 +38,7 @@ function List(props) {
 			{addList}
 			<li className='listItem-form'>
 				<div className='listItem-landing'>
-					<form onSubmit={handleSubmit}>
+					<form onSubmit={handleSubmit} className='task'>
 						<input
 							ref={textInput}
 							className='input-landing list-input'
