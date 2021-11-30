@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import { api } from "../api";
 import FooterThree from "./FooterThree";
+import { useNavigate } from "react-router-dom";
 
-const SignIn = () => {
+const SignIn = (props) => {
   const [userName, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  // const navigation = useNavigate()
+  const navigation = useNavigate()
   return (
     <div>
       <div className="signup-header">
@@ -28,7 +29,7 @@ const SignIn = () => {
         <input onChange={(e) => setUsername(e.target.value)} />
         <h4>Enter password</h4>
         <input onChange={(e) => setPassword(e.target.value)} type="password" />
-<Link  exact to="/"  > 
+
         <button
           id="register-button"
           onClick={() => {
@@ -36,21 +37,22 @@ const SignIn = () => {
               alert("Please enter username or password");
             } else {
               api
-                .get(`/users/login/authenticate`, {
+                .get(`/users/login/`, {
                   params: { userName: userName, password: password },
                 })
                 .then(({ data }) => {
                   console.log(data);
+                  if (data.status === 200) {data.loggedIn =true ; props.handleLogin(data) ; navigation('/logged-in')}
                 //   <Route exact path={'/'} element={<Landing data={data}/>} />
                    
                 //   localStorage.setItem("user", JSON.stringify({ userName, password }))
-                //   navigation('/')
+                   
                 });
             }
            }}
         >
           login
-        </button> </Link>
+        </button> 
       </div>
 
       <FooterThree />
@@ -59,3 +61,5 @@ const SignIn = () => {
 };
 
 export default SignIn;
+
+
