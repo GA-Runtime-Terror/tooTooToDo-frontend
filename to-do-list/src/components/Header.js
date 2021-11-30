@@ -17,11 +17,10 @@ function Header() {
 			return (
 				<div id='menu-div'>
 					<div>
-						{' '}
-						<label class='switch'>
+						<label className='switch'>
 							<input type='checkbox' />
-							<span class='slider round'></span>
-						</label>{' '}
+							<span className='slider round'></span>
+						</label>
 					</div>
 				</div>
 			);
@@ -32,23 +31,26 @@ function Header() {
 
 	return (
 		<div>
-      <div className="header-div">
-      <Link  exact to="/">  <img
-          id="toucan-logo"
-          src="https://i.ibb.co/Jt8zy7x/toucan-1.png"
-          alt="toucan-1"
-        />  </Link>
-        
-       
-        {handleHamburger()}
- 
-        <h1> Toucan </h1>
-         <i onClick={() => {menuToggle()}} class="fas fa-bars fa-2x"></i>
-      </div>
+			<div className='header-div'>
+				<Link to='/'>
+					<img
+						id='toucan-logo'
+						src='https://i.ibb.co/Jt8zy7x/toucan-1.png'
+						alt='toucan-1'
+					/>
+				</Link>
 
-      
-    </div>
-  );
+				{handleHamburger()}
+
+				<h1> Toucan </h1>
+				<i
+					onClick={() => {
+						menuToggle();
+					}}
+					className='fas fa-bars fa-2x'></i>
+			</div>
+		</div>
+	);
 }
 
 export default Header;

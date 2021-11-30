@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 
-function LoggedIn(props) {
+const LoggedIn = (props) => {
 	const [randomQuote, setRandomQuote] = useState([]);
 	const [list, setList] = useState();
 	const textInput = useRef(null);
@@ -23,8 +23,12 @@ function LoggedIn(props) {
 			.then((data) => setList(data.list[0].toDoItems));
 	}, []);
 
-	const quoteHTML = randomQuote.map((quote) => {
-		return <p>{quote.q}</p>;
+	const quoteHTML = randomQuote.map((quote, index) => {
+		return (
+			<p key={index}>
+				"{quote.q}" - {quote.a}
+			</p>
+		);
 	});
 
 	const handleSubmit = (e) => {
@@ -93,5 +97,5 @@ function LoggedIn(props) {
 			<Footer />
 		</div>
 	);
-
+};
 export default LoggedIn;

@@ -3,7 +3,7 @@ import Footer from './Footer';
 import Header from './Header';
 import List from './List';
 
-function Landing() {
+const Landing = () => {
 	const [randomQuote, setRandomQuote] = useState([]);
 
 	const api_url =
@@ -20,7 +20,11 @@ function Landing() {
 	}, []);
 
 	const quoteHTML = randomQuote.map((quote, index) => {
-		return <p key={index}>{quote.q}</p>;
+		return (
+			<p key={index}>
+				"{quote.q}" - {quote.a}
+			</p>
+		);
 	});
 
 	return (
@@ -36,5 +40,6 @@ function Landing() {
 			<Footer />
 		</div>
 	);
+};
 
 export default Landing;
