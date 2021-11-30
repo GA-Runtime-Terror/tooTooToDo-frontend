@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { api } from '../api';
 import FooterThree from './FooterThree';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const SignIn = (props) => {
 	const navigation = useNavigate();
@@ -33,11 +33,13 @@ const SignIn = (props) => {
 		<div>
 			<div className='signup-header'>
 				<div className='header-div'>
-					<img
-						className='toucan-logo'
-						src='https://i.ibb.co/Jt8zy7x/toucan-1.png'
-						alt='toucan-1'
-					/>
+					<Link to='/'>
+						<img
+							id='toucan-logo'
+							src='https://i.ibb.co/Jt8zy7x/toucan-1.png'
+							alt='toucan-1'
+						/>
+					</Link>
 					<h1> Toucan </h1>
 				</div>
 			</div>
