@@ -12,17 +12,15 @@ function Landing() {
 	async function getapi(url) {
 		const response = await fetch(url);
 		let data = await response.json();
-		console.log(data);
 		setRandomQuote(data);
 	}
 
 	useEffect(() => {
 		getapi(api_url);
-		console.log('use effect');
 	}, []);
 
-	const quoteHTML = randomQuote.map((quote) => {
-		return <p>{quote.q}</p>;
+	const quoteHTML = randomQuote.map((quote, index) => {
+		return <p key={index}>{quote.q}</p>;
 	});
 
 	return (

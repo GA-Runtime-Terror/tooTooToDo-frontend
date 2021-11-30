@@ -1,21 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 
 function List(props) {
-	const [listItem, setListItem] = useState([]);
 	const [addItem, setAddItem] = useState([]);
+	const textInput = useRef(null);
 
-	const handleChange = (event) => {
-		const value = event.target.value;
-		console.log(value);
-		setListItem(value);
-	};
-
-	const handleClick = (event) => {
-		event.preventDefault();
-		// addItem.push(listItem);
-		setAddItem([...addItem, listItem]);
-
-		console.log(addItem);
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		setAddItem([...addItem, textInput.current.value]);
+		e.target[0].value = '';
 	};
 
 	const removeClick = (index) => (event) => {
@@ -25,13 +17,9 @@ function List(props) {
 		setAddItem(copy);
 	};
 
-	useEffect(() => {
-		console.log('use effect');
-	}, []);
-
 	const addList = addItem.map((item, index) => {
 		return (
-			<li className='listItem-form'>
+			<li className='listItem-form' key={index}>
 				<div className='listItem-landing'>{item}</div>
 				<button className='button' onClick={removeClick(index)}>
 					remove
@@ -50,16 +38,18 @@ function List(props) {
 			{addList}
 			<li className='listItem-form'>
 				<div className='listItem-landing'>
-					<input
-						className='input-landing list-input'
-						onChange={handleChange}
-						type='text'
-						placeholder='Add new item'
-					/>
+					<form onSubmit={handleSubmit}>
+						<input
+							ref={textInput}
+							className='input-landing list-input'
+							type='text'
+							placeholder='Add new item'
+						/>
+						<button className='button' type='submit'>
+							Submit
+						</button>
+					</form>
 				</div>
-				<button className='button' onClick={handleClick} type='submit'>
-					Submit
-				</button>
 			</li>
 		</ul>
 	);
