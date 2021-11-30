@@ -1,60 +1,37 @@
-import { Link } from "react-router-dom";
-import React, { useState, useEffect } from "react";
-
+import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 
 function Header() {
+	const [menu, setMenu] = useState(false);
 
-  const [menu, setMenu] = useState(false)
+	useEffect(() => {
+		handleHamburger();
+	}, []);
 
-  useEffect(() => {
-    handleHamburger();
-    }, [])
+	const menuToggle = () => {
+		setMenu(!menu);
+	};
 
-  const menuToggle = () => {
-    setMenu(!menu) 
-     
-  }
+	const handleHamburger = () => {
+		if (menu === true) {
+			return (
+				<div id='menu-div'>
+					<div>
+						{' '}
+						<label class='switch'>
+							<input type='checkbox' />
+							<span class='slider round'></span>
+						</label>{' '}
+					</div>
+				</div>
+			);
+		} else {
+			return <></>;
+		}
+	};
 
-  const handleHamburger = () => {
-
-    if (menu === true) {
-
-      return (
-
-        <div id="menu-div">
-
-        <div>
-          {" "}
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider round"></span>
-          </label>{" "}
-        </div>
-
-      </div>)
-
-    } else {
-
-    return (
-      <>
-      </>
-    )
-      
-    }
-}
-  
-    
-
-  return (
-    <div>
-
-{/* <div>
-          {" "}
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider round"></span>
-          </label>{" "}
-        </div> */}
+	return (
+		<div>
       <div className="header-div">
       <Link  exact to="/">  <img
           id="toucan-logo"

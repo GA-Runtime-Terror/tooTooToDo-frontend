@@ -74,8 +74,6 @@ a:hover {
 	padding: none;
 }
 
-
-
 #toucan-logo {
 	height: 80px;
 	width: auto;
@@ -114,6 +112,7 @@ a:hover {
   justify-content: space-between;
 }
 
+
 .listItem-landing {
 	margin: 0px;
 	padding: 0px;
@@ -128,8 +127,8 @@ a:hover {
 	cursor: pointer;
 	color: white;
 	background-color: black;
-}
 
+}
 
 .fa-home {
 	position: absolute;
