@@ -38,7 +38,7 @@ function Landing() {
       <div className="body-div">
        
         <div id="quote-div">{quoteHTML}</div>
-         <h2>Toucan do it! </h2>
+         <h2 className="toucan-doit">Toucan do it! </h2>
 <List />
         
 

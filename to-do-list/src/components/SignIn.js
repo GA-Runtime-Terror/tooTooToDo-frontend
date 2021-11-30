@@ -12,11 +12,11 @@ const SignIn = (props) => {
     <div>
       <div className="signup-header">
         <div className="header-div">
-          <img
-            className="toucan-logo"
-            src="https://i.ibb.co/Jt8zy7x/toucan-1.png"
-            alt="toucan-1"
-          />
+        <Link  exact to="/">  <img
+          id="toucan-logo"
+          src="https://i.ibb.co/Jt8zy7x/toucan-1.png"
+          alt="toucan-1"
+        />  </Link>
 
           <h1> Toucan </h1>
         </div>

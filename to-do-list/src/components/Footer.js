@@ -15,7 +15,7 @@ function Footer() {
 
          <br/>
 
-        <h4> <Link  exact to="/sign-in"> Log in </Link> </h4>
+        <h3> <Link  exact to="/sign-in"> Log in </Link> </h3>
 
        </div>
     );

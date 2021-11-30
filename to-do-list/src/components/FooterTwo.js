@@ -10,7 +10,7 @@ function FooterTwo() {
         
        
          
-        <Link  exact to="/">  <i className="fas fa-home fa-3x">  </i>  </Link>
+      
 
        
 

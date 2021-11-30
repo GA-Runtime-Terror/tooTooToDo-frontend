@@ -10,7 +10,7 @@ function FooterThree() {
         
        
          
-        <Link  exact to="/">  <i className="fas fa-home fa-3x">  </i>  </Link>
+       
 
        
 
@@ -18,7 +18,7 @@ function FooterThree() {
         
      
 
-<p className="footer-two-words">words </p>
+
         </div>
 
       

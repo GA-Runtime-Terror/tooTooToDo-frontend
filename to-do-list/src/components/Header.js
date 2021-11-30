@@ -56,11 +56,12 @@ function Header() {
           </label>{" "}
         </div> */}
       <div className="header-div">
-        <img
-          className="toucan-logo"
+      <Link  exact to="/">  <img
+          id="toucan-logo"
           src="https://i.ibb.co/Jt8zy7x/toucan-1.png"
           alt="toucan-1"
-        />
+        />  </Link>
+        
        
         {handleHamburger()}
  
