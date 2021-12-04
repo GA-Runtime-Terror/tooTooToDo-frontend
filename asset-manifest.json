@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/tooTooToDo-frontend/static/css/main.cdbdb4d6.chunk.css",
-    "main.js": "/tooTooToDo-frontend/static/js/main.40f9224c.chunk.js",
-    "main.js.map": "/tooTooToDo-frontend/static/js/main.40f9224c.chunk.js.map",
+    "main.css": "/tooTooToDo-frontend/static/css/main.a25c0f24.chunk.css",
+    "main.js": "/tooTooToDo-frontend/static/js/main.c906ad23.chunk.js",
+    "main.js.map": "/tooTooToDo-frontend/static/js/main.c906ad23.chunk.js.map",
     "runtime-main.js": "/tooTooToDo-frontend/static/js/runtime-main.f5a922ab.js",
     "runtime-main.js.map": "/tooTooToDo-frontend/static/js/runtime-main.f5a922ab.js.map",
     "static/js/2.ef8d2c23.chunk.js": "/tooTooToDo-frontend/static/js/2.ef8d2c23.chunk.js",
     "static/js/2.ef8d2c23.chunk.js.map": "/tooTooToDo-frontend/static/js/2.ef8d2c23.chunk.js.map",
     "index.html": "/tooTooToDo-frontend/index.html",
-    "static/css/main.cdbdb4d6.chunk.css.map": "/tooTooToDo-frontend/static/css/main.cdbdb4d6.chunk.css.map",
+    "static/css/main.a25c0f24.chunk.css.map": "/tooTooToDo-frontend/static/css/main.a25c0f24.chunk.css.map",
     "static/js/2.ef8d2c23.chunk.js.LICENSE.txt": "/tooTooToDo-frontend/static/js/2.ef8d2c23.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f5a922ab.js",
     "static/js/2.ef8d2c23.chunk.js",
-    "static/css/main.cdbdb4d6.chunk.css",
-    "static/js/main.40f9224c.chunk.js"
+    "static/css/main.a25c0f24.chunk.css",
+    "static/js/main.c906ad23.chunk.js"
   ]
 }
