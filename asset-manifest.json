@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/tooTooToDo-frontend/static/css/main.a25c0f24.chunk.css",
-    "main.js": "/tooTooToDo-frontend/static/js/main.c906ad23.chunk.js",
-    "main.js.map": "/tooTooToDo-frontend/static/js/main.c906ad23.chunk.js.map",
-    "runtime-main.js": "/tooTooToDo-frontend/static/js/runtime-main.f5a922ab.js",
-    "runtime-main.js.map": "/tooTooToDo-frontend/static/js/runtime-main.f5a922ab.js.map",
-    "static/js/2.ef8d2c23.chunk.js": "/tooTooToDo-frontend/static/js/2.ef8d2c23.chunk.js",
-    "static/js/2.ef8d2c23.chunk.js.map": "/tooTooToDo-frontend/static/js/2.ef8d2c23.chunk.js.map",
-    "index.html": "/tooTooToDo-frontend/index.html",
-    "static/css/main.a25c0f24.chunk.css.map": "/tooTooToDo-frontend/static/css/main.a25c0f24.chunk.css.map",
-    "static/js/2.ef8d2c23.chunk.js.LICENSE.txt": "/tooTooToDo-frontend/static/js/2.ef8d2c23.chunk.js.LICENSE.txt"
+    "main.css": "/toucan/static/css/main.a25c0f24.chunk.css",
+    "main.js": "/toucan/static/js/main.c906ad23.chunk.js",
+    "main.js.map": "/toucan/static/js/main.c906ad23.chunk.js.map",
+    "runtime-main.js": "/toucan/static/js/runtime-main.a19dfea3.js",
+    "runtime-main.js.map": "/toucan/static/js/runtime-main.a19dfea3.js.map",
+    "static/js/2.b374aa1f.chunk.js": "/toucan/static/js/2.b374aa1f.chunk.js",
+    "static/js/2.b374aa1f.chunk.js.map": "/toucan/static/js/2.b374aa1f.chunk.js.map",
+    "index.html": "/toucan/index.html",
+    "static/css/main.a25c0f24.chunk.css.map": "/toucan/static/css/main.a25c0f24.chunk.css.map",
+    "static/js/2.b374aa1f.chunk.js.LICENSE.txt": "/toucan/static/js/2.b374aa1f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f5a922ab.js",
-    "static/js/2.ef8d2c23.chunk.js",
+    "static/js/runtime-main.a19dfea3.js",
+    "static/js/2.b374aa1f.chunk.js",
     "static/css/main.a25c0f24.chunk.css",
     "static/js/main.c906ad23.chunk.js"
   ]
