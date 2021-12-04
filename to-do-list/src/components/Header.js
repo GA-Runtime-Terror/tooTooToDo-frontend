@@ -28,21 +28,20 @@ function Header() {
 					/>{' '}
 				</Link>
 
-				<h1> Toucan </h1>
+				<h1 className="title"y> Toucan </h1>
 				<div id='menu-div'>
-					{/* <nav className="navBar"> */}
-					<button onClick={handleToggle}>
-						<i id='hamburger' class='fas fa-bars fa-2x'></i>
-					</button>
-
-					<ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`}>
+					<div className={`menuNav ${navbarOpen ? ' showMenu' : ''}`}>
 						<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
 							<>
 								<GlobalStyles />
-								<button onClick={themeToggler}>Light/Dark</button>
+								<button className="button" onClick={themeToggler}>Light/Dark</button>
 							</>
 						</ThemeProvider>
-					</ul>
+					</div>
+					<i
+						onClick={handleToggle}
+						id='hamburger'
+						class='fas fa-bars fa-2x'></i>
 				</div>
 			</div>
 		</div>
