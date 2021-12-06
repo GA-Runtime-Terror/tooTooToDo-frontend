@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Footer from './Footer';
-import Header from './Header';
+import LandingHeader from './LandingHeader';
 import List from './List';
 
 const Landing = () => {
@@ -29,7 +29,7 @@ const Landing = () => {
 
 	return (
 		<div className='App'>
-			<Header />
+			<LandingHeader />
 
 			<div className='body-div'>
 				<div id='quote-div'>{quoteHTML}</div>

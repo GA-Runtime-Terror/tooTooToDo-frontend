@@ -1,53 +1,48 @@
 import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyles } from './globalStyles';
+import { lightTheme, darkTheme } from './Toggle';
 
 function Header() {
-	const [menu, setMenu] = useState(false);
+	const [navbarOpen, setNavbarOpen] = useState(false);
 
-	useEffect(() => {
-		handleHamburger();
-	}, []);
-
-	const menuToggle = () => {
-		setMenu(!menu);
+	const handleToggle = () => {
+		setNavbarOpen(!navbarOpen);
 	};
 
-	const handleHamburger = () => {
-		if (menu === true) {
-			return (
-				<div id='menu-div'>
-					<div>
-						<label className='switch'>
-							<input type='checkbox' />
-							<span className='slider round'></span>
-						</label>
-					</div>
-				</div>
-			);
-		} else {
-			return <></>;
-		}
+	const [theme, setTheme] = useState('light');
+	const themeToggler = () => {
+		theme === 'light' ? setTheme('dark') : setTheme('light');
 	};
 
 	return (
 		<div>
 			<div className='header-div'>
 				<Link to='/'>
+					{' '}
 					<img
 						id='toucan-logo'
 						src='https://i.ibb.co/Jt8zy7x/toucan-1.png'
 						alt='toucan-1'
-					/>
+					/>{' '}
 				</Link>
 
-				{handleHamburger()}
-
-				<h1> Toucan </h1>
-				<i
-					onClick={() => {
-						menuToggle();
-					}}
-					className='fas fa-bars fa-2x'></i>
+				<h1 className="title"y> Toucan </h1>
+				<div id='menu-div'>
+					<div className={`menuNav ${navbarOpen ? ' showMenu' : ''}`}>
+						<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+							<>
+								<GlobalStyles />
+								<button className="button" onClick={themeToggler}>Light/Dark</button>
+							</>
+						</ThemeProvider>
+					</div>
+					<i
+						onClick={handleToggle}
+						id='hamburger'
+						class='fas fa-bars fa-2x'></i>
+				</div>
 			</div>
 		</div>
 	);
